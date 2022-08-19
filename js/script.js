@@ -69,3 +69,40 @@ document.getElementById("btn-case-minus").addEventListener("click", function () 
     // final total 
     total();
 });
+
+// test 
+document.getElementById("phone-quantity").addEventListener("change", function () {
+    let quantity = getValue("phone-quantity");
+    let singlePhonePrice = 1219;
+    let phoneTotal = singlePhonePrice * quantity;
+
+    setInnerText("phone-product-total", phoneTotal);
+
+    // subtotal 
+    subTotal();
+
+    // tax
+    tax();
+
+    // final total 
+    total();
+
+});
+
+document.getElementById("case-quantity").addEventListener("change", function () {
+    let quantity = getValue("case-quantity");
+    let singlePhonePrice = 59;
+    let phoneTotal = singlePhonePrice * quantity;
+
+    setInnerText("case-product-total", phoneTotal);
+
+    // subtotal 
+    subTotal();
+
+    // tax
+    tax();
+
+    // final total 
+    total();
+
+});

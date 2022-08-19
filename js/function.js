@@ -12,6 +12,12 @@ function updateQuantity(elementId, isIncrease) {
         }
     }
 }
+function getValue(elementId) {
+    let value = document.getElementById(elementId).value;
+    value = parseInt(value);
+    return value;
+
+}
 function setValue(elementId, value) {
     document.getElementById(elementId).value = value;
 }
